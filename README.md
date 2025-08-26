@@ -24,7 +24,7 @@ llm models default "hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M"
 To use these templates from the command line, enter the following:
 
 ```bash
-llm --template gh:janbridley/helix-llm-completions/feature
+llm --template gh:janbridley/helix-llm-completions/feature "Write a hello world script in c"
 ```
 
 To use the template inside helix:
