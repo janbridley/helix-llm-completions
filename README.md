@@ -5,7 +5,7 @@ Templates for simple language model completions in the helix editor. These are g
 brew install llm
 llm install llm-tools-simpleeval llm-templates-github
 brew install ollama && llm install llm-ollama
-brew install llama.cpp && llm install llm-gguf
+# brew install llama.cpp && llm install llm-gguf
 
 # Choose any LLM that fits in memory and supports tool calling
 ollama pull hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M
