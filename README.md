@@ -2,7 +2,7 @@
 Templates for simple language model completions in the helix editor. These are generally based on [simonw/llm](https://github.com/simonw/llm), which provides a simple command line interface for the ollama and llama.cpp backends. This repository provides [model templates](https://llm.datasette.io/en/stable/templates.html#templates), helix keymaps, and a quickstart shell script to get started.
 
 ```bash
-uv tool install llm
+brew install llm
 llm install llm-tools-simpleeval llm-templates-github
 brew install ollama && llm install llm-ollama
 brew install llama.cpp && llm install llm-gguf
