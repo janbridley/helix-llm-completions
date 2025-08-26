@@ -11,6 +11,10 @@ llm install llm-tools-simpleeval llm-templates-github
 
 # Choose any LLM that fits in memory and supports tool calling
 ollama pull hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M
+```
 
+To use these templates from the command line, enter the following:
 
+```bash
+llm --template gh:janbridley/helix-llm-completions/feature
 ```
