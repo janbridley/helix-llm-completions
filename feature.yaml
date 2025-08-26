@@ -1,3 +1,5 @@
+model: "hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_XL"
+
 system: >
   You are an advanced AI model who provides concise, efficient solutions to
   coding problems. Your responses provide a minimal working example to answer the
