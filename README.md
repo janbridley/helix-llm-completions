@@ -1,5 +1,10 @@
 # helix-llm-completions
-Templates for simple language model completions in the helix editor. These are generally based on [simonw/llm](https://github.com/simonw/llm), which provides a simple command line interface for the ollama and llama.cpp backends. This repository provides [model templates](https://llm.datasette.io/en/stable/templates.html#templates), helix keymaps, and a quickstart shell script to get started.
+
+Templates for simple language model completions in the helix editor. These are generally
+based on [simonw/llm](https://github.com/simonw/llm), which provides a simple command
+line interface for the ollama and llama.cpp backends. This repository provides
+[model templates](https://llm.datasette.io/en/stable/templates.html#templates), helix
+keymaps, and a quickstart shell script to get started.
 
 ```bash
 # Install simonw/llm and a few tools
@@ -20,4 +25,17 @@ To use these templates from the command line, enter the following:
 
 ```bash
 llm --template gh:janbridley/helix-llm-completions/feature
+```
+
+To use the template inside helix:
+
+```toml
+# Add this to your config.toml to run our LLM completion with space-space-p
+# NOTE: this pulls in the entire file as a buffer, so it may be slow for compute-limited
+#       devices. Removing '-f %{buffer_name}' will dramatically speed up processing
+[keys.normal.space.space]
+p = [
+  """:insert-output llm --template gh:janbridley/helix-llm-completions/feature \
+     '%{selection}' -f %{buffer_name} --no-stream""",
+]
 ```
