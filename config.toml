@@ -2,6 +2,11 @@
 # NOTE: this pulls in the entire file as a buffer, so it may be slow for compute-limited
 #       devices. Removing '-f %{buffer_name}' will dramatically speed up processing
 [keys.normal.space.space]
+d = [
+  """:insert-output llm --template gh:janbridley/helix-llm-completions/document \
+     '%{selection}' -f %{buffer_name} --no-stream"""
+]
+
 p = [
   """:insert-output llm --template gh:janbridley/helix-llm-completions/feature \
      '%{selection}' -f %{buffer_name} --no-stream"""
