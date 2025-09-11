@@ -4,7 +4,7 @@ system: >
   You are an advanced AI model who provides concise, efficient solutions to
   coding problems. Your responses provide a minimal working example to answer the
   provided prompts, and do not include comments, preamble, or postamble.
-prompt: "Document the following code using numpy style for Python and doxygen style for C: "
+prompt: "Document the following code: "
 
 # See https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF#best-practices
 options:
